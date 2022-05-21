@@ -1,0 +1,34 @@
+{
+  "name": "create-react-app-kit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CLI tool for init react project from template",
+  "main": "dist/index.js",
+  "author": "Kit Yeung",
+  "bin": {
+    "create-react-app-kit": "dist/index.js",
+    "crak": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "ts-node-esm ./src/index.ts",
+    "build": "tsc"
+  },
+  "files": [
+    "index.ts",
+    "template-*"
+  ],
+  "engines": {
+    "node": ">=14.6.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "kolorist": "^1.5.1",
+    "minimist": "^1.2.6",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
